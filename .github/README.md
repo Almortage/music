@@ -1,5 +1,5 @@
-![Super-Music](https://th.bing.com/th/id/OIP.hzsGP0ZSS9GpWcWaeDAQQgHaHa?pid=ImgDet&rs=1)
-# ᴜɴᴍᴀɪɴᴛᴀɪɴᴇᴅ
+![Super-Music](https://telegra.ph/file/ba5e50feaff3c2bbde984.jpg)
+# 𝗠𝗨𝗦𝗜𝗖 𝗦𝗣𝗜𝗗𝗘𝗥
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=WELCOME+TO+Super-Music+AN+ADVANCE+BOT)](https://github.com/FM8Y/Super-Music)
 
