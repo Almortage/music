@@ -1,0 +1,62 @@
+{
+    "name": "𝙎𝙤𝙐𝙍𝙘𝙀 𝙎𝙋𝙞𝙙𝙀𝙍 𝄞",
+    "description": "اللهم صلي علي سيدنا محمد 🌺",
+    "logo": "https://telegra.ph/file/ba5e50feaff3c2bbde984.jpg",
+    "keywords": [
+    "python3",
+    "telegram",
+    "Fallen",
+    "MusicBot",
+    "telegram-bot",
+    "pyrogram"
+    ],
+    "env": {
+      "API_ID": {
+        "description": " ضـع ايبي ايدي احصل علية من هنا https://my.telegram.org",
+        "value": "",
+        "required": true
+      },
+      "API_HASH": {
+        "description": " ضـع ايبي هاش احصل علية من هنا https://my.telegram.org",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "ضـع تـوكـن بـوتـك هـنـا",
+        "value": "",
+        "required": true
+      },
+      "OWNER_ID": {
+        "description": "ضـع ايـديـك هـنـا",
+        "value": "",
+        "required": true
+      },
+      "SESSION": {
+        "description": "ضـع جلسة البايروجرام احصل عليها من هنا @UU2xbot",
+        "value": "",
+        "required": true
+      },
+      "SUDO_USERS": {
+        "description": "ضـع ايـدي الـحـسـاب الـمـسـاعـد",
+        "value": "",
+        "required": true
+      },
+      "SUPPORT_CHAT": {
+        "description": "ضـع رابـط جـروب الـدعـم",
+        "value": "https://t.me/EE_47",
+        "required": false
+      }
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "stack": "container"
+  }
