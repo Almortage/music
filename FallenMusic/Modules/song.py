@@ -29,7 +29,7 @@ from pyrogram.enums import ChatType
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from youtube_search import YoutubeSearch
 
-from AVATARMusic import BOT_MENTION, BOT_USERNAME, LOGGER, app
+from FallenMusic import BOT_MENTION, BOT_USERNAME, LOGGER, app
 
 
 @app.on_message(filters.command(["song", "vsong", "video", "music"]) | filters.command(["تحميل","فيديو","صوت"],prefixes= ["/", "!","","#"]))
