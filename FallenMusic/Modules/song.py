@@ -58,7 +58,7 @@ async def song(_, message: Message):
             f"فشل إحضار المسار من ʏᴛ-ᴅʟ.\n\n**السبب :** `{ex}`"
         )
 
-    await m.edit_text("⎊ جارٍ التحميل انتظر,\n\n⎊ بواسطه ‌SPIDER..")
+    await m.edit_text("⎊ جارٍ التحميل انتظر,\n\n⎊ بواسطه افاتار")
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
