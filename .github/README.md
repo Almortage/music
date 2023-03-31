@@ -1,7 +1,7 @@
 ![Super-Music](https://telegra.ph/file/6b5f18c07143327344dd2.jpg)
 # AVATAR MUSICE
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=WELCOME+TO+MUSIC-SPIDER+AN+ADVANCE+BOT)](https://github.com/FM8Y/Super-Music)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=WELCOME+TO+MUSIC-AVATAR+AN+ADVANCE+BOT)](https://github.com/FM8Y/Super-Music)
 
 <p align="center">
     ─「 sᴜᴩᴩᴏʀᴛ 」─
