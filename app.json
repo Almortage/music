@@ -1,7 +1,7 @@
 {
-    "name": "𝙎𝙤𝙐𝙍𝙘𝙀 𝙎𝙋𝙞𝙙𝙀𝙍 𝄞",
+    "name": "𝙎𝙊𝙐𝙍𝘾𝞝𖢻𝘼𝙑𝘼𝙏𝘼𝙍",
     "description": "اللهم صلي علي سيدنا محمد 🌺",
-    "logo": "https://telegra.ph/file/ba5e50feaff3c2bbde984.jpg",
+    "logo": "https://telegra.ph/file/6b5f18c07143327344dd2.jpg",
     "keywords": [
     "python3",
     "telegram",
@@ -32,7 +32,7 @@
         "required": true
       },
       "SESSION": {
-        "description": "ضـع جلسة البايروجرام احصل عليها من هنا @UU2xbot",
+        "description": "ضـع جلسة البايروجرام احصل عليها من هنا @SessionStringGeneratorZBot",
         "value": "",
         "required": true
       },
@@ -43,7 +43,7 @@
       },
       "SUPPORT_CHAT": {
         "description": "ضـع رابـط جـروب الـدعـم",
-        "value": "https://t.me/EE_47",
+        "value": "https://t.me/va_source",
         "required": false
       }
     },
