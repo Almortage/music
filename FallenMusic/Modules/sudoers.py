@@ -24,7 +24,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from config import OWNER_ID
-from FallenMusic import SUDOERS, app
+from AlmortagelMusic import SUDOERS, app
 
 
 @app.on_message(filters.command(["addsudo"]) | filters.command(["رفع مطور","مط","ترقيه","م"],prefixes= ["/", "!","","#"]) & filters.user(OWNER_ID))
