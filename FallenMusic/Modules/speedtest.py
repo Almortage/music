@@ -25,7 +25,7 @@ import asyncio
 import speedtest
 from pyrogram import filters
 
-from FallenMusic import SUDOERS, app
+from AlmortagelMusic import SUDOERS, app
 
 
 def testspeed(m):
@@ -49,7 +49,7 @@ async def speedtest_function(_, message):
     m = await message.reply_text("**⎊ تشغيل اختبار السرعة...**")
     loop = asyncio.get_event_loop()
     result = await loop.run_in_executor(None, testspeed, m)
-    output = f"""✯ **نتائج اختبار سرعه افاتار ** ✯
+    output = f"""✯ **نتائج اختبار سرعه المرتجل ** ✯
     
 <u>**⎊ عميل :**</u>
 **⎊ مزود خدمة الإنترنت :** {result['client']['isp']}
