@@ -40,10 +40,10 @@ logging.basicConfig(
 )
 logging.getLogger("pyrogram").setLevel(logging.ERROR)
 logging.getLogger("pytgcalls").setLevel(logging.ERROR)
-LOGGER = logging.getLogger("FallenMusic")
+LOGGER = logging.getLogger("AlmortagelMusic")
 
 app = Client(
-    "FallenMusic",
+    "AlmortagelMusic",
     config.API_ID,
     config.API_HASH,
     bot_token=config.BOT_TOKEN,
@@ -92,8 +92,8 @@ async def fallen_startup():
     ASS_USERNAME = getme2.username
     ASS_MENTION = getme2.mention
     try:
-        await app2.join_chat("va_source")
-        await app2.join_chat("source_av")
+        await app2.join_chat("AlmortagelTech2")
+        await app2.join_chat("AlmortagelTech")
     except:
         pass
 
