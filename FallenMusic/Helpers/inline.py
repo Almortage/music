@@ -23,7 +23,7 @@
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 import config
-from FallenMusic import BOT_USERNAME
+from AlmortagelMusic import BOT_USERNAME
 
 close_key = InlineKeyboardMarkup(
     [[InlineKeyboardButton(text="• مسح •", callback_data="close")]]
