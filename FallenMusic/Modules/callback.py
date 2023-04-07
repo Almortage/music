@@ -24,7 +24,7 @@ from pyrogram import filters
 from pyrogram.types import CallbackQuery, InlineKeyboardMarkup
 from pytgcalls.types import AudioPiped, HighQualityAudio
 
-from FallenMusic import (
+from AlmortagelMusic import (
     ASS_ID,
     ASS_NAME,
     BOT_ID,
@@ -35,7 +35,7 @@ from FallenMusic import (
     fallendb,
     pytgcalls,
 )
-from FallenMusic.Helpers import (
+from AlmortagelMusic.Helpers import (
     _clear_,
     admin_check_cb,
     gen_thumb,
@@ -43,8 +43,8 @@ from FallenMusic.Helpers import (
     stream_off,
     stream_on,
 )
-from FallenMusic.Helpers.dossier import *
-from FallenMusic.Helpers.inline import (
+from AlmortagelMusic.Helpers.dossier import *
+from AlmortagelMusic.Helpers.inline import (
     buttons,
     close_key,
     help_back,
