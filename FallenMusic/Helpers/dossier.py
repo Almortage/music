@@ -20,72 +20,91 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-from FallenMusic import BOT_NAME
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-PM_START_TEXT = """
-⎊ مـرحـبـا » {0}
-⎊ انا بـوت » {1}
-⎊ اسـتطـيع تـشغيل الموسيقي
-⎊ فـي الـمكـالـمـات الـصـوتـيـة
-⎊ للمساعدة اضغط على زر الاوامر 
-"""
+import config
+from FallenMusic import BOT_USERNAME
 
-START_TEXT = """
-━‌‌‏─━─『𝙎𝙊𝙐𝙍𝘾𝞝𖢻𝘼𝙑𝘼𝙏𝘼𝙍』─━─━‌‌‏
-⎊ مـرحـبـا » {0} 
-⎊ انا بـوت استطيع تـشـغيـل
-⎊ القرآن والميوزك في الكول
-⎊ لـمـعـرفة اوامـر الـتـشـغـيـل
-⎊ ادخـــــــل الـــــى البــــــوت
-━‌‌‏─━─『𝙎𝙊𝙐𝙍𝘾𝞝𖢻𝘼𝙑𝘼𝙏𝘼𝙍』─━─━‌‌‏
-"""
+close_key = InlineKeyboardMarkup(
+    [[InlineKeyboardButton(text="• مسح •", callback_data="close")]]
+)
 
-HELP_TEXT = f"""
-<u>⎊ **الاوامر في بوت سورس افاتار {BOT_NAME} :**</u>
 
-⎊ لـتـشـغـيل اغـنـيـة في الـمكـالـمة الـصـوتـيـة
-⎊ اكتب تشغيل + اسم الاغنية
+buttons = InlineKeyboardMarkup(
+    [
+        [
+            InlineKeyboardButton(text="▶️", callback_data="resume_cb"),
+            InlineKeyboardButton(text="⏸", callback_data="pause_cb"),
+            InlineKeyboardButton(text="⏭️", callback_data="skip_cb"),
+            InlineKeyboardButton(text="⏹", callback_data="end_cb"),
+        ]
+    ]
+)
 
-⎊ لإيقاف تشغيل الموسيقي في الكول مؤقتاً
-⎊ اكتب كتم او اسكت
 
-⎊ لأسـتـئـنـاف تـشغـيل الـمـوسـيقي في الـكـول
-⎊ اكتب كمل او الغاء الكتم
+pm_buttons = [
+    [
+        InlineKeyboardButton(
+            text="‹ اضف البوت في مجموعتك ›",
+            url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+        )
+    ],
+    [InlineKeyboardButton(text="• اوامࢪ التشغيل •", callback_data="fallen_help")],
+    [
+        InlineKeyboardButton(text="• سوࢪس المرتجل •", url=config.SUPPORT_CHANNEL),
+        InlineKeyboardButton(text="• جࢪوب الدعم •", url=config.SUPPORT_CHAT),
+    ],
+    [
+        InlineKeyboardButton(
+            text="• مطوࢪ السورس •", url="https://t.me/ALMORTAGEL_12"
+        ),
+        InlineKeyboardButton(text="• مالك البوت •", user_id=config.OWNER_ID),
+    ],
+]
 
-⎊ لتخطي الاغنية وتشغيل الاغنية التالية
-⎊ اكتب تخطي او التالي
- 
-⎊ لإيقاف تشغيل الـموسيقي في الـكـول
-⎊ اكتب ايقاف او قف
 
-⎊ اكتب بنج لمعرفة سرعة تشغيل البوت
-⎊ اكتب المطورين لمعرفة مطورين البوت
-⎊ اكتب تحميل + الاسم للتنزيل من اليوتيوب
-⎊ اكتب بحث + الاسم للبحث عن اغنية
-"""
+gp_buttons = [
+    [
+        InlineKeyboardButton(
+            text="‹ اضف البوت في مجموعتك ›",
+            url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+        )
+    ],
+    [
+        InlineKeyboardButton(text="• سوࢪس المرتجل •", url=config.SUPPORT_CHANNEL),
+        InlineKeyboardButton(text="• جࢪوب الدعم •", url=config.SUPPORT_CHAT),
+    ],
+    [
+        InlineKeyboardButton(
+            text="• مطوࢪ السورس •", url="https://t.me/ALMORTAGEL_12"
+        ),
+        InlineKeyboardButton(text="• مالك البوت •", user_id=config.OWNER_ID),
+    ],
+]
 
-HELP_SUDO = f"""
-<u>⎊ **اوامر المطور {BOT_NAME} :**</u>
 
-⎊ اكتب المكالمات لمعرفة المكالمات في البوت
-⎊ اكتب /eval لتشغيل على محطة البوت 
-⎊ اكتب فحص لاختبار سرعة السيرفر  
-⎊ اكتب الاحصائيات لعرض إحصائيات السيرفر 
+helpmenu = [
+    [
+        InlineKeyboardButton(
+            text="• اوامࢪ التشغيل •",
+            callback_data="fallen_cb help",
+        )
+    ],
+    [
+        InlineKeyboardButton(text="• اوامࢪ المطور •", callback_data="fallen_cb sudo"),
+        InlineKeyboardButton(text="• اوامࢪ المالك •", callback_data="fallen_cb owner"),
+    ],
+    [
+        InlineKeyboardButton(text="• ࢪجوع •", callback_data="fallen_home"),
+        InlineKeyboardButton(text="• مسح •", callback_data="close"),
+    ],
+]
 
-⎊ اكتب /اسم + الاسم لوضعة اسم للمساعد
-⎊ اكتب /بايو + البايو لوضعة بايو للمساعد
-⎊ اكتب /صورة واعمل ريب على صورة للمساعد
-⎊ اكتب /مسح لحذف صورة الحساب المساعد 
-"""
 
-HELP_DEV = f"""
-<u>⎊ **اوامر المالك {BOT_NAME} :**</u>
-
-⎊ اكتب الفارات لجلب فارات تنصيب البوت
-⎊ اكتب اذاعة و اعمل ريب على الاذاعه
-⎊ اكتب تنظيف لمسح التخزين المؤقت للبوت
-⎊ اكتب مغادرة لمغادرة المساعد للجروبات
-
-⎊ اكتب /مطور +اليوزر لإضافة مطور في البوت
-⎊ اكتب /تنزيل +اليوزر لـتـنزيل مطور من البوت
-"""
+help_back = [
+    [InlineKeyboardButton(text="• جࢪوب الدعم •", url=config.SUPPORT_CHAT)],
+    [
+        InlineKeyboardButton(text="• ࢪجوع •", callback_data="fallen_help"),
+        InlineKeyboardButton(text="• مسح •", callback_data="close"),
+    ],
+]
