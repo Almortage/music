@@ -37,7 +37,7 @@ from pytgcalls.types import AudioPiped, HighQualityAudio
 from youtube_search import YoutubeSearch
 
 from config import DURATION_LIMIT
-from FallenMusic import (
+from AlmortagelMusic import (
     ASS_ID,
     ASS_MENTION,
     ASS_NAME,
@@ -50,13 +50,13 @@ from FallenMusic import (
     fallendb,
     pytgcalls,
 )
-from FallenMusic.Helpers.active import add_active_chat, is_active_chat, stream_on
-from FallenMusic.Helpers.downloaders import audio_dl
-from FallenMusic.Helpers.errors import DurationLimitError
-from FallenMusic.Helpers.gets import get_file_name, get_url
-from FallenMusic.Helpers.inline import buttons
-from FallenMusic.Helpers.queue import put
-from FallenMusic.Helpers.thumbnails import gen_qthumb, gen_thumb
+from AlmortagelMusic.Helpers.active import add_active_chat, is_active_chat, stream_on
+from AlmortagelMusic.Helpers.downloaders import audio_dl
+from AlmortagelMusic.Helpers.errors import DurationLimitError
+from AlmortagelMusic.Helpers.gets import get_file_name, get_url
+from AlmortagelMusic.Helpers.inline import buttons
+from AlmortagelMusic.Helpers.queue import put
+from AlmortagelMusic.Helpers.thumbnails import gen_qthumb, gen_thumb
 
 
 @app.on_message(
