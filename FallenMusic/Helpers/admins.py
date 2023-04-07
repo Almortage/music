@@ -25,7 +25,7 @@ from typing import Callable
 from pyrogram.enums import ChatMemberStatus
 from pyrogram.types import CallbackQuery, Message
 
-from FallenMusic import SUDOERS, app
+from AlmortagelMusic import SUDOERS, app
 
 from .active import is_active_chat
 
