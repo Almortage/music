@@ -23,8 +23,8 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from FallenMusic import app, pytgcalls
-from FallenMusic.Helpers import admin_check, close_key, is_streaming, stream_off
+from AlmortagelMusic import app, pytgcalls
+from AlmortagelMusic.Helpers import admin_check, close_key, is_streaming, stream_off
 
 
 @app.on_message(filters.command(["pause"]) | filters.command(["كتم","اسكت","ايقاف مؤقت"],prefixes= ["/", "!","","#"]) & filters.group)
