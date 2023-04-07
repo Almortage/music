@@ -27,7 +27,7 @@ from pyrogram.types import (
 )
 from youtubesearchpython.__future__ import VideosSearch
 
-from FallenMusic import BOT_NAME, app
+from AlmortagelMusic import BOT_NAME, app
 
 
 @app.on_inline_query()
