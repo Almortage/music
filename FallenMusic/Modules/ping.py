@@ -28,8 +28,8 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 import config
-from FallenMusic import BOT_NAME, StartTime, app
-from FallenMusic.Helpers import get_readable_time
+from AlmortagelMusic import BOT_NAME, StartTime, app
+from AlmortagelMusic.Helpers import get_readable_time
 
 
 @app.on_message(filters.command("ping") | filters.command(["بنج","البنج"],prefixes= ["/", "!","","#"]))
@@ -60,7 +60,7 @@ async def ping_fallen(_, message: Message):
                     InlineKeyboardButton("الدعم", url=config.SUPPORT_CHAT),
                     InlineKeyboardButton(
                         "السوࢪس",
-                        url="https://t.me/source_av",
+                        url="https://t.me/AlmortagelTech",
                     ),
                 ],
             ]
