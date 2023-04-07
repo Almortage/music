@@ -26,7 +26,7 @@ import os
 
 from pyrogram import idle
 
-from FallenMusic import (
+from AlmortagelMusic import (
     ASS_ID,
     ASS_NAME,
     ASS_USERNAME,
@@ -39,13 +39,13 @@ from FallenMusic import (
     app2,
     pytgcalls,
 )
-from FallenMusic.Modules import ALL_MODULES
+from AlmortagelMusic.Modules import ALL_MODULES
 
 
 async def fallen_startup():
     LOGGER.info("[•] Loading Modules...")
     for module in ALL_MODULES:
-        importlib.import_module("FallenMusic.Modules." + module)
+        importlib.import_module("AlmortagelMusic.Modules." + module)
     LOGGER.info(f"[•] Loaded {len(ALL_MODULES)} Modules.")
 
     LOGGER.info("[•] Refreshing Directories...")
@@ -89,4 +89,4 @@ async def fallen_startup():
 
 if __name__ == "__main__":
     asyncio.get_event_loop().run_until_complete(fallen_startup())
-    LOGGER.error("Almortagel Music Bot Stopped.")
+    LOGGER.error("ALMORTAGEL MUSIC BOT Stopped.")
