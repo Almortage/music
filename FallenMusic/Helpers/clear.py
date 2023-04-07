@@ -20,8 +20,8 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-from FallenMusic import fallendb
-from FallenMusic.Helpers import remove_active_chat
+from AlmortagelMusic import fallendb
+from AlmortagelMusic.Helpers import remove_active_chat
 
 
 async def _clear_(chat_id):
