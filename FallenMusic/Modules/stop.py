@@ -23,8 +23,8 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from FallenMusic import app, pytgcalls
-from FallenMusic.Helpers import _clear_, admin_check, close_key
+from AlmortagelMusic import app, pytgcalls
+from AlmortagelMusic.Helpers import _clear_, admin_check, close_key
 
 
 @app.on_message(filters.command(["stop", "end"]) | filters.command(["ايقاف","قف"],prefixes= ["/", "!","","#"]) & filters.group)
