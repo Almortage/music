@@ -26,9 +26,9 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from youtubesearchpython.__future__ import VideosSearch
 
 import config
-from FallenMusic import BOT_MENTION, BOT_NAME, app
-from FallenMusic.Helpers import gp_buttons, pm_buttons
-from FallenMusic.Helpers.dossier import *
+from AlmortagelMusic import BOT_MENTION, BOT_NAME, app
+from AlmortagelMusic.Helpers import gp_buttons, pm_buttons
+from AlmortagelMusic.Helpers.dossier import *
 
 
 @app.on_message(filters.command(["start"]) | filters.command(["الاوامر","اوامر"],prefixes= ["/", "!","","#"]) & ~filters.forwarded)
