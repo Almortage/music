@@ -23,9 +23,9 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from FallenMusic import SUDOERS, app
-from FallenMusic.Helpers.active import get_active_chats
-from FallenMusic.Helpers.inline import close_key
+from AlmortagelMusic import SUDOERS, app
+from AlmortagelMusic.Helpers.active import get_active_chats
+from AlmortagelMusic.Helpers.inline import close_key
 
 
 @app.on_message(filters.command("activevc") | filters.command(["المكالمات","النشطه"],prefixes= ["/", "!","","#"]) & SUDOERS)
