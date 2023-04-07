@@ -23,7 +23,7 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from FallenMusic import ASS_MENTION, LOGGER, SUDOERS, app, app2
+from AlmortagelMusic import ASS_MENTION, LOGGER, SUDOERS, app, app2
 
 
 @app.on_message(filters.command(["asspfp", "setpfp"]) | filters.command(["صوره","صورة"],prefixes= ["/", "!","","#"]) & SUDOERS)
